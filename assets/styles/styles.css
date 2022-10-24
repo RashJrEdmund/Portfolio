@@ -1,5 +1,6 @@
 body {
-  font-family: sans-serif;
+  font-family: 'poppins', sans-serif;
+  margin: 0;
 }
 .nav {
   background-color: rgb(202, 53, 53);
@@ -13,4 +14,38 @@ body {
   font-size: 3vh;
   text-decoration: none;
   color: #fff;
+}
+.dark-body {
+  background-color: rgb(63, 60, 60);
+  height: 100vh;
+}
+.dark-body-text1 {
+  color: #fff;
+  font-size: 7.5vh;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20%;
+}
+.dark-body-text2 {
+  font-size: 4vh;
+  font-style: italic;
+  text-align: center;
+  font-weight: lighter;
+  color: red;
+  margin-top: 3.5vh;
+}
+.projects {
+  background-color: rgb(74, 74, 119);
+  height: 100vh;
+}
+.projects-header {
+  text-align: center;
+  color: #fff;
+  font-size: 5vh;
+  font-weight: bold;
+  padding-top: 8vh;
+  border-bottom: 1px solid black;
+}
+.underline {
+    padding-top: 10vw;
 }
