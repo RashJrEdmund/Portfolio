@@ -1,18 +1,16 @@
 body {
   font-family: sans-serif;
 }
-.top-header-box {
+.nav {
   background-color: rgb(202, 53, 53);
-  color: #fff;
-  text-align: right;
-  height: 10vh;
-  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  height: 10vh; 
 }
-.top-header-text {
+.navtext {
   padding-top: 1.5%;
-  padding-right: 2%;
+  margin-right: 2%;
   font-size: 3vh;
   text-decoration: none;
   color: #fff;
-  word-spacing: 10px;
 }
