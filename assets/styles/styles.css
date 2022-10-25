@@ -6,7 +6,9 @@ body {
   background-color: rgb(202, 53, 53);
   display: flex;
   justify-content: flex-end;
-  height: 10vh; 
+  height: 10vh;
+  position: fixed;
+  width: 100vw;
 }
 .navtext {
   padding-top: 1.5%;
@@ -36,7 +38,17 @@ body {
 }
 .projects {
   background-color: rgb(74, 74, 119);
-  height: 100vh;
+  height: 150vh;
+  max-height: 150vh;
+  justify-content: center;
+  
+}
+.project-containers {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10vh;
+
+  
 }
 .projects-header {
   text-align: center;
@@ -44,8 +56,39 @@ body {
   font-size: 5vh;
   font-weight: bold;
   padding-top: 8vh;
-  border-bottom: 1px solid black;
+ }
+.line{
+  border: 1px solid rgb(255, 255, 255);
+  height: 0vh;
+  width: 80vh;
+  margin-top: 1.8vh;
 }
-.underline {
-    padding-top: 10vw;
+.contact {
+  background-color: rgb(63, 60, 60);
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+}
+.contact-header1 {
+  font-size: 10vh;
+  padding-top: 30vh;
+  font-weight: bold;
+}
+.contact-header2 {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 3vh;
+}
+.media-links {
+  padding-bottom: 40vh;
+}
+.line2 {
+  border: 1px solid rgb(202, 53, 53);
+  background-color: rgb(202, 53, 53);
+  height: 0.3vh;
+}
+footer {
+  background-color: rgb(63, 60, 60);
+  margin-top: 0;
+  margin-bottom: 1.5vh;
 }
