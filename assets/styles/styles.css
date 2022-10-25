@@ -80,7 +80,7 @@ body {
   font-size: 3vh;
 }
 .media-links {
-  padding-bottom: 40vh;
+  padding-top: 10vh;
 }
 .line2 {
   border: 1px solid rgb(202, 53, 53);
@@ -93,4 +93,6 @@ footer {
   margin-top: 0;
   margin-bottom: 0;
   height: 12vh;
+  text-align: center;
+  color: #fff;
 }
