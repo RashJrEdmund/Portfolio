@@ -6,7 +6,9 @@ body {
   background-color: rgb(202, 53, 53);
   display: flex;
   justify-content: flex-end;
-  height: 10vh; 
+  height: 10vh;
+  position: fixed;
+  width: 100vw;
 }
 .navtext {
   padding-top: 1.5%;
@@ -36,7 +38,17 @@ body {
 }
 .projects {
   background-color: rgb(74, 74, 119);
-  height: 100vh;
+  height: 180vh;
+  max-height: 180vh;
+  justify-content: center;
+  
+}
+.project-containers {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10vh;
+
+  
 }
 .projects-header {
   text-align: center;
@@ -44,8 +56,10 @@ body {
   font-size: 5vh;
   font-weight: bold;
   padding-top: 8vh;
-  border-bottom: 1px solid black;
-}
-.underline {
-    padding-top: 10vw;
+ }
+.line{
+  border: 1px solid rgb(255, 255, 255);
+  height: 0vh;
+  width: 80vh;
+  margin-top: 1.8vh;
 }
