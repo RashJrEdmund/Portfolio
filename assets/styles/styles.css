@@ -4,10 +4,10 @@ body {
 }
 
 .nav {
-  background-color: rgb(202, 53, 53);
+  background-color: #be3144;
   display: flex;
   justify-content: flex-end;
-  height: 10vh;
+  height: 8.9vh;
   position: fixed;
   width: 100%;
   align-items: center;
@@ -21,7 +21,7 @@ body {
 }
 
 .dark-body {
-  background-color: rgb(63, 60, 60);
+  background-color: #303841;
   height: 100vh;
   width: 100%;
 }
@@ -31,7 +31,7 @@ body {
   font-size: 7.5vh;
   font-weight: bold;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 42vh;
 }
 
 .dark-body-text2 {
@@ -39,12 +39,12 @@ body {
   font-style: italic;
   text-align: center;
   font-weight: lighter;
-  color: red;
+  color: #be3144;
   margin-top: 3.5vh;
 }
 
 .projects {
-  background-color: rgb(74, 74, 119);
+  background-color: #45567d;
   height: auto;
   margin-bottom: 0;
   width: auto;
@@ -55,11 +55,11 @@ body {
   color: #fff;
   font-size: 5vh;
   font-weight: bold;
-  padding-top: 8vh;
+  padding-top: 12vh;
 }
 
  .line {
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid #fff;
   height: 0vh;
   width: 80vh;
   margin-top: 1.8vh;
@@ -78,7 +78,7 @@ body {
 }
 
 .show-all {
-  background-color: rgb(63, 60, 60);
+  background-color: #303841;
   border: none;
   margin-left: 40vw;
   color: #fff;
@@ -90,7 +90,7 @@ body {
 }
 
 .contact {
-  background-color: rgb(63, 60, 60);
+  background-color: #303841;
   height: auto;
   text-align: center;
   color: #fff;
@@ -115,21 +115,19 @@ body {
 }
 
 .line2 {
-  border: 1px solid rgb(202, 53, 53);
-  background-color: rgb(202, 53, 53);
+  border: 1px solid #be3144;
+  background-color: #be3144;
   height: 0.3vh;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 footer {
-  background-color: rgb(63, 60, 60);
+  background-color: #303841;
   height: 15vh;
   color: #fff;
   display: flex;
   font-size: 2.5vh;
-  /* align-items: center; */
-  /* justify-content: space-around; */
   padding-left: 10vw;
   flex-wrap: nowrap;
   gap: 5vw;
