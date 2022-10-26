@@ -1,8 +1,8 @@
 body {
-  font-family: 'poppins', sans-serif;
+  font-family: poppins, sans-serif;
   margin: 0;
-  /* background-color: rgb(63, 60, 60); */
 }
+
 .nav {
   background-color: rgb(202, 53, 53);
   display: flex;
@@ -12,17 +12,20 @@ body {
   width: 100%;
   align-items: center;
 }
+
 .navtext {
   margin-right: 2vh;
   font-size: 3vh;
   text-decoration: none;
   color: #fff;
 }
+
 .dark-body {
   background-color: rgb(63, 60, 60);
   height: 100vh;
   width: 100%;
 }
+
 .dark-body-text1 {
   color: #fff;
   font-size: 7.5vh;
@@ -30,6 +33,7 @@ body {
   text-align: center;
   padding-top: 20%;
 }
+
 .dark-body-text2 {
   font-size: 4vh;
   font-style: italic;
@@ -38,12 +42,14 @@ body {
   color: red;
   margin-top: 3.5vh;
 }
+
 .projects {
   background-color: rgb(74, 74, 119);
   height: auto;
   margin-bottom: 0;
   width: auto;
 }
+
 .projects-header {
   text-align: center;
   color: #fff;
@@ -51,12 +57,14 @@ body {
   font-weight: bold;
   padding-top: 8vh;
 }
- .line{
+
+ .line {
   border: 1px solid rgb(255, 255, 255);
   height: 0vh;
   width: 80vh;
   margin-top: 1.8vh;
 }
+
 .project-containers {
   flex-wrap: wrap;
   display: flex;
@@ -64,21 +72,23 @@ body {
   line-height: 1px;
   justify-content: center;
 }
+
 .container {
   margin-bottom: 1vh;
 }
 
 .show-all {
   background-color: rgb(63, 60, 60);
-  height: auto;
-  width: auto;
-  border-radius: .5vh;
+  border: none;
   margin-left: 40vw;
   color: #fff;
-  text-decoration: none;
-  justify-content: center;
   font-size: 3.5vh;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  width: 14vw;
+  height: 6vh;
 }
+
 .contact {
   background-color: rgb(63, 60, 60);
   height: auto;
@@ -86,20 +96,24 @@ body {
   color: #fff;
   margin-top: 0;
 }
+
 .contact-header1 {
   font-size: 10vh;
   padding-top: 30vh;
   font-weight: bold;
 }
+
 .contact-header2 {
   font-style: italic;
   font-weight: lighter;
   font-size: 3vh;
 }
+
 .media-links {
   padding-top: 6.5vh;
   padding-bottom: 28.5vh;
 }
+
 .line2 {
   border: 1px solid rgb(202, 53, 53);
   background-color: rgb(202, 53, 53);
@@ -107,6 +121,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 footer {
   background-color: rgb(63, 60, 60);
   height: 15vh;
@@ -119,10 +134,12 @@ footer {
   flex-wrap: nowrap;
   gap: 5vw;
 }
+
 .footer-text1 {
   flex: 1;
   flex-wrap: wrap;
 }
+
 .footer-text2 {
   flex: 1;
   flex-wrap: wrap;
