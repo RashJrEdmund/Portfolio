@@ -42,7 +42,7 @@ body {
   background-color: rgb(74, 74, 119);
   height: auto;
   margin-bottom: 0;
-  width: 100%;
+  width: auto;
 }
 .projects-header {
   text-align: center;
@@ -60,7 +60,7 @@ body {
 .project-containers {
   flex-wrap: wrap;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   line-height: 1px;
   justify-content: center;
 }
@@ -68,16 +68,12 @@ body {
   margin-bottom: 1vh;
 }
 
-.show-all-box {
-  background-color: rgb(63, 60, 60);
-  height: 10vh;
-  width: 20vw;
-  border-radius: .5vh;
-  margin-left: 45vw;
-  align-items: center;
-  justify-content: center;
-}
 .show-all {
+  background-color: rgb(63, 60, 60);
+  height: auto;
+  width: auto;
+  border-radius: .5vh;
+  margin-left: 40vw;
   color: #fff;
   text-decoration: none;
   justify-content: center;
@@ -85,7 +81,7 @@ body {
 }
 .contact {
   background-color: rgb(63, 60, 60);
-  height: 100vh;
+  height: auto;
   text-align: center;
   color: #fff;
   margin-top: 0;
@@ -101,7 +97,8 @@ body {
   font-size: 3vh;
 }
 .media-links {
-  padding-top: 10vh;
+  padding-top: 6.5vh;
+  padding-bottom: 28.5vh;
 }
 .line2 {
   border: 1px solid rgb(202, 53, 53);
@@ -112,16 +109,21 @@ body {
 }
 footer {
   background-color: rgb(63, 60, 60);
-  height: 12vh;
+  height: 15vh;
   color: #fff;
   display: flex;
-  font-size: 2vh;
-  align-items: center;
-  justify-content: space-around;
+  font-size: 2.5vh;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  padding-left: 10vw;
+  flex-wrap: nowrap;
+  gap: 5vw;
 }
 .footer-text1 {
   flex: 1;
+  flex-wrap: wrap;
 }
 .footer-text2 {
   flex: 1;
+  flex-wrap: wrap;
 }
