@@ -1,6 +1,7 @@
 body {
   font-family: 'poppins', sans-serif;
   margin: 0;
+  /* background-color: rgb(63, 60, 60); */
 }
 .nav {
   background-color: rgb(202, 53, 53);
@@ -8,11 +9,11 @@ body {
   justify-content: flex-end;
   height: 10vh;
   position: fixed;
-  width: 100vw;
+  width: 100%;
+  align-items: center;
 }
 .navtext {
-  padding-top: 1.5%;
-  margin-right: 2%;
+  margin-right: 2vh;
   font-size: 3vh;
   text-decoration: none;
   color: #fff;
@@ -20,6 +21,7 @@ body {
 .dark-body {
   background-color: rgb(63, 60, 60);
   height: 100vh;
+  width: 100%;
 }
 .dark-body-text1 {
   color: #fff;
@@ -39,8 +41,21 @@ body {
 .projects {
   background-color: rgb(74, 74, 119);
   height: auto;
+  margin-bottom: 0;
   width: 100%;
-
+}
+.projects-header {
+  text-align: center;
+  color: #fff;
+  font-size: 5vh;
+  font-weight: bold;
+  padding-top: 8vh;
+}
+ .line{
+  border: 1px solid rgb(255, 255, 255);
+  height: 0vh;
+  width: 80vh;
+  margin-top: 1.8vh;
 }
 .project-containers {
   flex-wrap: wrap;
@@ -50,40 +65,30 @@ body {
   justify-content: center;
 }
 .container {
-  margin-bottom: 1remx;
+  margin-bottom: 1vh;
 }
-.projects-header {
-  text-align: center;
-  color: #fff;
-  font-size: 5vh;
-  font-weight: bold;
-  padding-top: 8vh;
- }
- .show-all-box {
+
+.show-all-box {
   background-color: rgb(63, 60, 60);
-  height: 5vh;
-  width: 10vw;
+  height: 10vh;
+  width: 20vw;
   border-radius: .5vh;
-  align-items: center;
   margin-left: 45vw;
- }
- .show-all {
+  align-items: center;
+  justify-content: center;
+}
+.show-all {
   color: #fff;
   text-decoration: none;
   justify-content: center;
   font-size: 3.5vh;
- }
-.line{
-  border: 1px solid rgb(255, 255, 255);
-  height: 0vh;
-  width: 80vh;
-  margin-top: 1.8vh;
 }
 .contact {
   background-color: rgb(63, 60, 60);
   height: 100vh;
   text-align: center;
   color: #fff;
+  margin-top: 0;
 }
 .contact-header1 {
   font-size: 10vh;
@@ -103,12 +108,20 @@ body {
   background-color: rgb(202, 53, 53);
   height: 0.3vh;
   margin-top: 0;
+  margin-bottom: 0;
 }
 footer {
   background-color: rgb(63, 60, 60);
-  margin-top: 0;
-  margin-bottom: 0;
   height: 12vh;
-  text-align: center;
   color: #fff;
+  display: flex;
+  font-size: 2vh;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-text1 {
+  flex: 1;
+}
+.footer-text2 {
+  flex: 1;
 }
