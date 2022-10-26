@@ -58,10 +58,10 @@ body {
   padding-top: 12vh;
 }
 
- .line {
+.line {
   border: 1px solid #fff;
-  height: 0vh;
-  width: 80vh;
+  height: 0;
+  width: 80;
   margin-top: 1.8vh;
 }
 
