@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  border: 0;
 }
 
 .nav {
@@ -13,7 +14,7 @@ body {
   justify-content: flex-end;
   height: 10vh;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   align-items: center;
 }
 
@@ -32,24 +33,26 @@ body {
   background-color: #303841;
   height: 100vh;
   margin: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 .dark-body-text1 {
   color: #fff;
   font-size: 10rem;
   font-weight: bold;
-  text-align: center;
+  /* text-align: center; */
   padding-top: 35vh;
+  margin-right: 45vw;
 }
 
 .dark-body-text2 {
   font-size: 4vmin;
   font-style: italic;
-  text-align: center;
+  /* text-align: center; */
   font-weight: lighter;
   color: #be3144;
   margin-top: 2rem;
+  margin-right: 45vw;
 }
 
 .projects {
