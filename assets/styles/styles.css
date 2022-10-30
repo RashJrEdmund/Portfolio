@@ -1,25 +1,29 @@
 body {
   font-family: poppins, sans-serif;
   margin: 0;
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 .nav {
   background-color: #be3144;
   display: flex;
   justify-content: flex-end;
-  height: 6rem;
+  height: 10vh;
   position: fixed;
   width: 100vw;
   align-items: center;
 }
 
 .nav-text-box {
-  margin-right: 2vw;
+  margin-right: 5rem;
 }
 
 .navtext {
-  margin-right: 1rem;
-  font-size: 2rem;
+  margin-right: 1.5rem;
+  font-size: 4vmin;
   text-decoration: none;
   color: #fff;
 }
@@ -28,18 +32,19 @@ body {
   background-color: #303841;
   height: 100vh;
   margin: 0;
+  width: 100vw;
 }
 
 .dark-body-text1 {
   color: #fff;
-  font-size: 6rem;
+  font-size: 10rem;
   font-weight: bold;
   text-align: center;
   padding-top: 35vh;
 }
 
 .dark-body-text2 {
-  font-size: 3rem;
+  font-size: 4vmin;
   font-style: italic;
   text-align: center;
   font-weight: lighter;
@@ -57,21 +62,22 @@ body {
 .projects-header {
   text-align: center;
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: bold;
   padding-top: 9rem;
+  padding-bottom: 2rem;
 }
 
 .line {
   border: 1px solid #fff;
   height: 0;
-  width: 80%;
+  width: 50rem;
   margin-top: .8rem;
 }
 
 .project-containers {
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
   gap: 3.5rem;
   line-height: 1px;
   justify-content: center;
@@ -82,8 +88,8 @@ body {
 } */
 
 img {
-  width: 25rem;
-  height: 35rem;
+  width: 30vw;
+ /*  height: 35rem; */
 }
 
 .container-caption {
