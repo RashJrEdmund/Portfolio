@@ -16,7 +16,7 @@ body {
 }
 
 .nav-text-box {
-  margin-right: .5vw;
+  margin-right: 0.5vw;
 }
 
 .navtext {
@@ -73,14 +73,14 @@ body {
 .line {
   border: 1px solid #fff;
   width: 50vw;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 
 .project-containers {
   display: flex;
   flex-wrap: wrap;
 
-  /* gap: 3.5vmin;*/
+  /* gap: 3.5vmin; */
 
   justify-content: center;
 }
@@ -104,7 +104,7 @@ img {
   color: #fff;
   font-size: 150%;
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .show-all-btn {
@@ -149,7 +149,7 @@ img {
 .line2 {
   border: 1px solid #be3144;
   background-color: #be3144;
-  height: .1rem;
+  height: 0.1rem;
   margin: 0;
 }
 
@@ -187,7 +187,7 @@ footer {
     width: 100vw;
   }
 
-  .contact{
+  .contact {
     width: 100vw;
   }
 
