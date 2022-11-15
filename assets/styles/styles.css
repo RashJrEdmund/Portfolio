@@ -1,16 +1,16 @@
 body {
   font-family: poppins, sans-serif;
   margin: 0;
-  border: 0;
+  background-color: yellowgreen;
 }
 
 .nav {
   background-color: #be3144;
   display: flex;
   justify-content: flex-end;
-  height: 10vh;
-  position: fixed;
+  height: 4.5rem;
   width: 100vw;
+  position: fixed;
   align-items: center;
   top: 0;
 }
@@ -29,27 +29,23 @@ body {
 .dark-body {
   background-color: #303841;
   height: 100vh;
-  margin: 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .dark-body-text1 {
   color: #fff;
   font-size: 4rem;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 20rem;
+  font-weight: 800;
+  padding-top: 43vh;
 }
 
 .dark-body-text2 {
+  margin-top: 0.5rem;
   font-size: 2rem;
   font-style: italic;
-  text-align: center;
-  font-weight: lighter;
+  font-weight: 50;
   color: #be3144;
-  margin-top: 0.2rem;
 }
 
 .projects {
@@ -62,23 +58,25 @@ body {
 }
 
 .projects-header {
+  background-color: gold;
   text-align: center;
   color: #fff;
   font-size: 2.5rem;
   font-weight: bold;
-  padding-top: 5vh;
-  padding-bottom: 2rem;
+  margin: 6rem auto 2rem;
+  width: fit-content;
 }
 
 .line {
   border: 1px solid #fff;
-  width: 50vw;
-  margin-top: 0.8rem;
+  margin: 0.8rem -0.5rem;
 }
 
 .project-containers {
-  display: flex;
-  flex-wrap: wrap;
+  background-color: aqua;
+  width: 100vw;
+  padding: 0;
+
 
   /* gap: 3.5vmin; */
 
@@ -88,6 +86,7 @@ body {
 .container {
   padding: 0;
   background-color: #303841;
+  width: fit-content;
 }
 
 img {
@@ -99,7 +98,8 @@ img {
 .container-caption {
   height: 7vh;
   width: 27rem;
-  background-color: #303841;
+  /* background-color: #303841; */
+  background-color: pink;
   border: none;
   color: #fff;
   font-size: 150%;
