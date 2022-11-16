@@ -69,7 +69,6 @@ body {
   justify-items: center;
 }
 
-
 .projects-header {
   text-align: center;
   color: #fff;
@@ -161,7 +160,6 @@ img {
   flex-wrap: wrap;
   width: fit-content;
   height: fit-content;
-  margin: auto;
   justify-content: space-around;
 }
 
@@ -172,7 +170,6 @@ img {
   width: fit-content;
   height: fit-content;
 }
-
 
 .media-links div:hover {
   transition: 0.5s;
@@ -226,7 +223,7 @@ footer {
 
   .media-links {
     width: 90%;
-    margin: 2.8rem auto 25r
+    margin: 2.8rem auto 25rem;
   }
 
   .project-containers {
