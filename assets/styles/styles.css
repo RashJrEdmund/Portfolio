@@ -2,6 +2,7 @@ body {
   font-family: poppins, sans-serif;
   margin: 0;
   background-color: #303841;
+  scroll-behavior: smooth;
 }
 
 .nav {
@@ -24,6 +25,7 @@ body {
   font-size: 4vmin;
   text-decoration: none;
   color: #fff;
+  transition: 1s;
 }
 
 .dark-body {
@@ -58,7 +60,7 @@ body {
 }
 
 .project-containers {
-  width: 100%;
+  width: 98%;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -143,6 +145,7 @@ img {
   font-size: 3.5rem;
   padding-top: 30vh;
   font-weight: bold;
+  word-break: keep-all;
 }
 
 .contact-header2 {
@@ -153,12 +156,13 @@ img {
 }
 
 .media-links {
-  background-color: gold;
   margin: 2.8rem auto 25rem;
-  text-align: center;
   display: flex;
+  flex-wrap: wrap;
   width: fit-content;
   height: fit-content;
+  margin: auto;
+  justify-content: space-around;
 }
 
 .media-links div {
@@ -166,7 +170,7 @@ img {
   flex-wrap: nowrap;
   padding: 5px;
   width: fit-content;
-  /* margin: auto; */
+  height: fit-content;
 }
 
 
@@ -174,6 +178,7 @@ img {
   transition: 0.5s;
   margin-top: 15px;
   height: 100%;
+  z-index: 1;
 }
 
 .media {
@@ -214,22 +219,28 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .dark-body {
-    width: 100vw;
+@media only screen and (max-width: 600px) {
+  .contact {
+    padding-bottom: 3rem;
   }
 
-  .projects {
-    width: 100vw;
+  .media-links {
+    width: 90%;
+    margin: 2.8rem auto 25r
   }
 
   .project-containers {
     grid-template-columns: 1fr;
   }
 
-  .contact {
-    width: 100vw;
+  .container {
+    width: 95%;
   }
+
+  img {
+    height: auto;
+  }
+
 
   footer {
     width: 100vw;
