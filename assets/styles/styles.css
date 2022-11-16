@@ -58,13 +58,12 @@ body {
 }
 
 .project-containers {
-  background-color: aqua;
-  width: fit-content;
+  width: 100%;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
-  /* gap: 3.5vmin; */
+  margin: auto;
+  gap: 3.5vmin;
   justify-items: center;
 }
 
@@ -85,24 +84,35 @@ body {
 .container {
   padding: 0;
   background-color: #303841;
-  width: fit-content;
+  width: 100%;
+}
+
+.container:hover {
+  margin-top: 10px;
+  box-shadow: 0 0 10px #be3144;
+  transition: 0.5s;
+}
+
+.container a {
+  text-decoration: none;
 }
 
 img {
-  width: 27rem;
+  width: 100%;
   height: 20rem;
   margin-bottom: 0;
 }
 
 .container-caption {
-  height: 7vh;
-  width: 27rem;
+  height: fit-content;
+  width: 100%;
   background-color: #303841;
   border: none;
   color: #fff;
   font-size: 150%;
+  padding: 1rem 0;
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  justify-items: center;
 }
 
 .show-all-btn {
@@ -143,10 +153,12 @@ img {
 }
 
 .media-links {
+  background-color: gold;
   margin: 2.8rem auto 25rem;
   text-align: center;
   display: flex;
   width: fit-content;
+  height: fit-content;
 }
 
 .media-links div {
@@ -194,6 +206,12 @@ footer {
 .footer-text2 {
   margin: auto;
   text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .project-containers {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 768px) {
