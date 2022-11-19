@@ -116,6 +116,17 @@ img {
   justify-items: center;
 }
 
+.varying {
+  transition: 1s;
+  animation-delay: 1s;
+}
+
+.hidden {
+  display: none;
+  transition: 1s ease-in;
+  animation-delay: 2s;
+}
+
 .show-all-btn {
   background-color: #303841;
   border: none;
@@ -125,6 +136,8 @@ img {
   margin: 3.5rem auto 8rem;
   font-size: 20px;
   font-weight: 500;
+  cursor: context-menu;
+  animation-delay: 2s;
 }
 
 .show-all-btn:hover {
