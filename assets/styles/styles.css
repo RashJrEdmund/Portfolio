@@ -116,12 +116,23 @@ img {
   justify-items: center;
 }
 
-.varying {
-  transition: 1s;
-  animation-delay: 1s;
+.projects .varying {
+  background-color: green;
+  width: 98%;
+  height: fit-content;
+  margin: 3.5vmin auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.5vmin;
 }
 
-.hidden {
+.varying .container {
+  background-color: #303841;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.varying.hidden {
   display: none;
   transition: 1s ease-in;
   animation-delay: 2s;
@@ -228,6 +239,10 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
+  .projects .varying {
+    grid-template-columns: 1fr 1fr;
+  }
+
   footer {
     height: 200px;
   }
@@ -255,12 +270,14 @@ footer {
     height: auto;
   }
 
-  .varying {
-    background-color: #303841;
-    height: 300px;
-    margin-bottom: 70px;
+  .projects .varying {
+    grid-template-columns: 1fr;
   }
 
+  .varying .container {
+    height: 500px;
+  }
+  
   .varying img {
     width: 100%;
     height: 100%;
