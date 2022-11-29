@@ -231,17 +231,16 @@ footer {
   color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   font-size: 2.5vh;
   gap: 1rem;
 }
 
 .footer-text1 {
-  margin: auto;
   text-align: center;
 }
 
 .footer-text2 {
-  margin: auto;
   text-align: center;
 }
 
@@ -294,6 +293,6 @@ footer {
 
   footer {
     width: 100vw;
-    height: fit-content;
+    height: 180px;
   }
 }
