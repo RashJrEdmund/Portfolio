@@ -4,7 +4,7 @@
 ![home page](assets/images/overview.png)
 
 ## About
-This project was a simple assignment given to test our still growing skills. it's about implementing a simple portfolio
+This project is simply a collection of a few of my projects so far.
 
 ## BUILT WITH
 This page is basically built with just

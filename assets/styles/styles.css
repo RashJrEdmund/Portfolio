@@ -121,7 +121,6 @@ img {
 }
 
 .projects .varying {
-  background-color: green;
   width: 98%;
   height: fit-content;
   margin: 3.5vmin auto 0;
@@ -162,7 +161,6 @@ img {
 
 .contact {
   background-color: #303841;
-  background-color: purple;
   height: 85vh;
   display: flex;
   flex-direction: column;
@@ -173,7 +171,6 @@ img {
 }
 
 .contact > div {
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,7 +178,6 @@ img {
 }
 
 .contact-header1 {
-  background-color: brown;
   font-size: 3.5rem;
   font-weight: bold;
   word-break: keep-all;
@@ -189,14 +185,12 @@ img {
 }
 
 .contact-header2 {
-  background-color: green;
   font-style: italic;
   font-weight: 100;
   font-size: 20px;
 }
 
 .media-links {
-  background-color: brown;
   display: flex;
   flex-wrap: wrap;
   width: fit-content;
@@ -298,7 +292,6 @@ footer {
   }
 
   footer {
-    background-color: green;
     width: 100vw;
     height: 180px;
   }
