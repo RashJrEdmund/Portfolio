@@ -271,7 +271,7 @@ footer {
 
   .media-links {
     width: 90%;
-    margin: 2.8rem auto 25rem;
+    margin: 2.8rem auto 0;
   }
 
   .project-containers {
