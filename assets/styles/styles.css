@@ -94,7 +94,6 @@ body {
 
 .container:hover {
   margin-top: 10px;
-  /* box-shadow: 0 0 10px #be3144; */
   transition: 0.5s;
 }
 
@@ -221,13 +220,15 @@ img {
 }
 
 .line2 {
-  border: 1px solid #be3144;
+  border: none;
   background-color: #be3144;
   height: 0.1rem;
 }
 
 footer {
+  box-sizing: border-box;
   background-color: #303841;
+  padding: 0 5px;
   height: 130px;
   color: #fff;
   display: grid;
@@ -294,6 +295,6 @@ footer {
 
   footer {
     width: 100vw;
-    height: 180px;
+    height: 100px;
   }
 }
