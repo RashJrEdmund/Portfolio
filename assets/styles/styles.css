@@ -174,6 +174,7 @@ img {
   flex-direction: column;
   align-items: center;
   height: fit-content;
+  text-align: center;
 }
 
 .contact-header1 {
@@ -292,7 +293,6 @@ footer {
   }
 
   footer {
-    background-color: green;
     width: 100vw;
     height: 180px;
   }
