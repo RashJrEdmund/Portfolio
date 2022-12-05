@@ -22,7 +22,6 @@ body {
 }
 
 .nav a {
-  font-size: 4vmin;
   text-decoration: none;
   color: #fff;
   transition: 1s;
@@ -31,16 +30,18 @@ body {
 }
 
 .nav button {
+  font-size: 1rem;
   background: none;
   border: none;
   height: 100%;
   padding: 0 20px;
   width: fit-content;
+  color: #fff;
 }
 
 .nav button:hover {
   background-color: #303841;
-  color: #fff;
+  border-bottom: 0.1px solid #be3144;
 }
 
 .dark-body {
