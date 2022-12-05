@@ -17,15 +17,30 @@ body {
 }
 
 .nav-text-box {
-  margin-right: 0.5vw;
+  margin-right: 10px;
+  height: 100%;
 }
 
-.navtext {
-  margin-right: 1.5rem;
+.nav a {
   font-size: 4vmin;
   text-decoration: none;
   color: #fff;
   transition: 1s;
+  height: 100%;
+  margin: 0;
+}
+
+.nav button {
+  background: none;
+  border: none;
+  height: 100%;
+  padding: 0 20px;
+  width: fit-content;
+}
+
+.nav button:hover {
+  background-color: #303841;
+  color: #fff;
 }
 
 .dark-body {
