@@ -50,20 +50,12 @@ body {
 
 .dark-body {
   background-color: #303841;
-  background: url("../images/my\ BG.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.bg-image {
-  display: none;
 }
 
 .dark-body-text1 {
@@ -78,7 +70,7 @@ body {
   font-size: 2rem;
   font-style: italic;
   font-weight: 50;
-  color: #000;
+  color: brown;
   font-weight: 500;
 }
 
@@ -231,7 +223,8 @@ img {
 .media-links div {
   display: flex;
   flex-wrap: nowrap;
-  padding: 5px;
+  padding: 10px;
+  margin: 5px;
   width: fit-content;
   height: fit-content;
 }
@@ -276,14 +269,6 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
-  .bg-image {
-    display: unset;
-    position: fixed;
-    z-index: -1;
-    height: 100vh;
-    width: 100%;
-  }
-
   .project-containers {
     grid-template-columns: 1fr 1fr;
   }
