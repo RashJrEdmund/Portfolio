@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: poppins, sans-serif;
   margin: 0;
@@ -46,14 +50,20 @@ body {
 
 .dark-body {
   background-color: #303841;
+  background: url("../images/my\ BG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.bg-image {
+  display: none;
 }
 
 .dark-body-text1 {
@@ -266,6 +276,14 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
+  .bg-image {
+    display: unset;
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+  }
+
   .project-containers {
     grid-template-columns: 1fr 1fr;
   }
