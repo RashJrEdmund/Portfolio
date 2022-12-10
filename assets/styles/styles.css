@@ -12,8 +12,10 @@ body {
 .nav {
   background-color: #be3144;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  height: 4.5rem;
+  align-items: center;
+  min-height: 4.5rem;
   width: 100vw;
   position: fixed;
   align-items: center;
@@ -24,7 +26,7 @@ body {
   background: url("../images/my\ BG.jpg");
   background-position: center;
   background-size: cover;
-  height: 100%;
+  height: 4.25rem;
   width: 4rem;
   display: flex;
   justify-content: center;
@@ -237,7 +239,6 @@ img {
   display: flex;
   flex-wrap: nowrap;
   padding: 10px;
-  margin: 5px;
   width: fit-content;
   height: fit-content;
 }
@@ -284,6 +285,11 @@ footer {
 @media only screen and (max-width: 1024px) {
   .rash {
     margin-left: 10px;
+  }
+
+  .nav button:hover {
+    background-color: unset;
+    border-bottom: none;
   }
 
   .project-containers {
