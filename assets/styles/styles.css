@@ -27,15 +27,18 @@ body {
   background-position: center;
   background-size: cover;
   height: 4.25rem;
-  width: 4rem;
+  width: 4.25rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   margin-left: 2rem;
-  border-radius: 1000%;
+  border-radius: 100%;
 }
 
 .nav-text-box {
+  border: none;
+  display: flex;
+  flex-wrap: nowrap;
   margin-right: 10px;
   height: 100%;
 }
@@ -49,12 +52,12 @@ body {
 }
 
 .nav button {
-  font-size: 1rem;
   background: none;
   border: none;
-  height: 100%;
-  padding: 0 20px;
+  font-size: 1rem;
+  height: 4.25rem;
   width: fit-content;
+  padding: 0 20px;
   color: #fff;
 }
 
@@ -287,11 +290,6 @@ footer {
     margin-left: 10px;
   }
 
-  .nav button:hover {
-    background-color: unset;
-    border-bottom: none;
-  }
-
   .project-containers {
     grid-template-columns: 1fr 1fr;
   }
@@ -302,6 +300,13 @@ footer {
 
   footer {
     height: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .nav button:hover {
+    background-color: unset;
+    border-bottom: none;
   }
 }
 
