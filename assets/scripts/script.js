@@ -11,7 +11,7 @@ showButton.addEventListener('click', () => {
 
         reappearing.classList.remove('hidden');
 
-        showButton.innerHTML = "< show less";
+        showButton.innerHTML = "<span></span>&#60; Show Less";
 
         clicks += 1;
 
@@ -26,6 +26,6 @@ showButton.addEventListener('click', () => {
 function addHidden () {
     hiddenContainer.forEach(reappearing => {
         reappearing.classList.add('hidden');
-        showButton.innerHTML = "show more >";
+        showButton.innerHTML = "<span></span> Show More &#62";
     })
 }
