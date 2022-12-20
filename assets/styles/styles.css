@@ -215,11 +215,11 @@ img {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: 0.6s;
 }
 
 .show-all-btn:hover .span2 {
   width: 100%;
-  transition: 0.6s;
 }
 
 .show-all-btn:hover {
