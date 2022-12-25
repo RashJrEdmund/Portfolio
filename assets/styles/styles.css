@@ -92,8 +92,9 @@ body {
 }
 
 .projects {
-  display: grid;
   background-color: #45567d;
+  /* background-color: burlywood; */
+  display: grid;
   height: auto;
   margin: 0;
   text-align: center;
