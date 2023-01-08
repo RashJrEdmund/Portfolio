@@ -125,14 +125,14 @@ body {
 }
 
 .container {
-  padding: 0;
   background-color: #303841;
+  padding: 0;
   width: 100%;
+  transition: 0.5s;
 }
 
 .container:hover {
   margin-top: 10px;
-  transition: 0.5s;
 }
 
 .container a {
@@ -163,12 +163,12 @@ img {
 .container-caption span {
   opacity: 0;
   font-size: 2rem;
+  transition: 0.5s ease-in-out;
 }
 
 .container:hover span {
   opacity: 1;
   color: #be3144;
-  transition: 1s ease-in-out;
 }
 
 .projects .varying {
@@ -218,12 +218,17 @@ img {
   transition: 0.6s;
 }
 
+.show-all-btn .span3 {
+  opacity: 0;
+  transition: 0.6s;
+}
+
 .show-all-btn:hover .span2 {
   width: 100%;
 }
 
-.show-all-btn:hover {
-  transition: 1s;
+.show-all-btn:hover .span3 {
+  opacity: 1;
 }
 
 .contact {
@@ -340,6 +345,11 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+    box-shadow: 0 5px 10px #000;
+  }
+
   .contact {
     padding-bottom: 3rem;
   }
@@ -351,10 +361,6 @@ footer {
 
   .project-containers {
     grid-template-columns: 1fr;
-  }
-
-  .container {
-    width: 95%;
   }
 
   img {
