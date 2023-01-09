@@ -1,31 +1,18 @@
 const showButton = document.querySelector('.show-all-btn')
-const hiddenContainer = document.querySelectorAll('.varying')
+const showButton2 = document.querySelector('.show-all-btn2')
+const hiddenContainer = document.querySelector('.varying')
 
-let clicks = 0
-console.log(showButton)
-console.log(hiddenContainer)
+const toogleBtnDisplay = () => {
+  showButton.classList.toggle('show-all-btn-display')
+  showButton2.classList.toggle('show-all-btn-display')
+
+  hiddenContainer.classList.toggle('hidden')
+}
 
 showButton.addEventListener('click', () => {
-  hiddenContainer.forEach(reappearing => {
-    console.log(hiddenContainer)
-
-    reappearing.classList.remove('hidden')
-
-    showButton.innerHTML = '<span class="span2"></span><span class="span3">&#60;</span> Show Less'
-
-    clicks += 1
-
-    console.log('current clicks =', clicks)
-    if (clicks > 1) {
-      addHidden()
-      clicks = 0
-    }
-  })
+  toogleBtnDisplay()
 })
 
-function addHidden () {
-  hiddenContainer.forEach(reappearing => {
-    reappearing.classList.add('hidden')
-    showButton.innerHTML = '<span class="span2"></span> Show More <span class="span3">&#62;</span>'
-  })
-}
+showButton2.addEventListener('click', () => {
+  toogleBtnDisplay()
+})
