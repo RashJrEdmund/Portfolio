@@ -136,7 +136,7 @@ body {
 }
 
 .container:hover {
-  margin-top: 10px;
+  transform: translateY(-20px);
 }
 
 .container a {
@@ -329,7 +329,7 @@ img {
 }
 
 .media-links div:hover .media {
-  color: #be3144;
+  transform: translateY(-10px);
   filter: drop-shadow(0 10px 5px #45567d);
 }
 
