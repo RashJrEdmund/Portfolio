@@ -139,7 +139,7 @@ body {
   transform: translateY(-20px);
 }
 
-.container a {
+.container .a-tag {
   text-decoration: none;
 }
 
