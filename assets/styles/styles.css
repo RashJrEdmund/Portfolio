@@ -23,7 +23,7 @@ body {
 }
 
 .rash {
-  background: url("../images/my\ BG.jpg");
+  background: url("../images/my\ BG.png");
   background-position: center;
   background-size: cover;
   height: 4.25rem;
@@ -58,6 +58,7 @@ body {
   height: 4.25rem;
   width: fit-content;
   padding: 0 20px;
+  cursor: pointer;
   color: #fff;
 }
 
@@ -67,7 +68,11 @@ body {
 }
 
 .dark-body {
-  background-color: #303841;
+  background: linear-gradient(to bottom, #4683b421, steelblue, #4683b421), url('../images/rash banner.png');
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -80,6 +85,7 @@ body {
   text-align: center;
   color: #fff;
   font-size: 4rem;
+  font-family: 'Changa', sans-serif;
   font-weight: 800;
   filter: drop-shadow(0 10px 5px #222);
 }
@@ -88,7 +94,7 @@ body {
   margin-top: 0.5rem;
   font-size: 2rem;
   font-style: italic;
-  color: #be3144;
+  color: #303841;
   font-weight: 500;
   filter: drop-shadow(0 10px 5px #222);
 }
@@ -118,6 +124,7 @@ body {
   color: #fff;
   font-size: 2.5rem;
   font-weight: bold;
+  font-family: 'Changa', sans-serif;
   margin: 6rem auto 2rem;
   width: fit-content;
   filter: drop-shadow(0 5px 10px #000);
@@ -156,6 +163,7 @@ img {
   border: none;
   color: #fff;
   font-size: 150%;
+  font-family: 'Changa', sans-serif;
   padding: 1rem 0;
   margin-top: 0;
   justify-items: center;
@@ -213,6 +221,7 @@ img {
   position: relative;
   z-index: 1;
   box-shadow: 0 5px 10px 0 #000;
+  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -264,6 +273,7 @@ img {
 /* END STYLING BOTH SHOW-ALL-BTN AND SHOW-ALL-BTN2 */
 
 .contact {
+  position: relative;
   background-color: #303841;
   background-size: cover;
   height: 85vh;
@@ -287,6 +297,7 @@ img {
   font-weight: bold;
   margin-bottom: 1rem;
   filter: drop-shadow(0 10px 5px #222);
+  z-index: 2;
 }
 
 .contact-header2 {
@@ -295,6 +306,25 @@ img {
   font-size: 20px;
   margin: 0 auto 1rem;
   filter: drop-shadow(0 10px 5px #222);
+  z-index: 2;
+}
+
+.contact .contact-image {
+  background: linear-gradient(to bottom, #0000007c, #0000007c, #0000007c), url('../images/my BG.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 500px;
+  border-radius: 0 50px 50px;
+  box-shadow: 0 0 10px #000;
+  z-index: 1;
 }
 
 .media-links {
@@ -304,6 +334,7 @@ img {
   width: fit-content;
   height: fit-content;
   justify-content: space-around;
+  z-index: 2;
 }
 
 .media-links div {
@@ -314,11 +345,6 @@ img {
   width: fit-content;
   height: fit-content;
 }
-
-/* .media-links div:hover {
-  margin-top: 15px;
-  height: 100%;
-} */
 
 .media {
   font-size: 25px;
@@ -354,10 +380,13 @@ footer {
 
 .footer-text1 {
   text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Changa', sans-serif;
 }
 
 .footer-text2 {
   text-align: center;
+  font-family: 'Changa', sans-serif;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -383,9 +412,20 @@ footer {
     background-color: unset;
     border-bottom: none;
   }
+
+  .contact .contact-image {
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, 0);
+    border-radius: 0 50px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .dark-body {
+    background-position: left;
+  }
+
   .container {
     width: 95%;
     margin: 10px auto;
@@ -393,6 +433,13 @@ footer {
 
   .contact {
     padding-bottom: 3rem;
+  }
+
+  .contact .contact-image {
+    left: 20%;
+    transform: translate(-50%, 0);
+    max-height: 450px;
+    border-radius: 100px 20px;
   }
 
   .media-links {
