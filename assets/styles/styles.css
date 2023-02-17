@@ -426,9 +426,9 @@ footer {
     background: unset;
   }
 
-.dark-body-text2 {
-  color: #be3144;
-}
+  .dark-body-text2 {
+    color: #be3144;
+  }
 
   .container {
     width: 95%;
