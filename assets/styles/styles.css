@@ -423,8 +423,12 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .dark-body {
-    background-position: left;
+    background: unset;
   }
+
+.dark-body-text2 {
+  color: #be3144;
+}
 
   .container {
     width: 95%;
