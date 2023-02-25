@@ -68,7 +68,7 @@ body {
 }
 
 .dark-body {
-  background: linear-gradient(to bottom, #4683b421, steelblue, #4683b421), url('../images/rash banner.png');
+  background-color: #303841;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -422,10 +422,6 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .dark-body {
-    background: unset;
-  }
-
   .dark-body-text2 {
     color: #be3144;
   }
