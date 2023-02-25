@@ -413,20 +413,6 @@ footer {
     border-bottom: none;
   }
 
-  .dark-body {
-    background: linear-gradient(to bottom, #0000005d, #0000005d, #0000005d), url("../images/rash\ banner.png");
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .contact .contact-image {
     top: 10%;
     left: 10%;
