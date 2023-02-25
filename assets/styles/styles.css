@@ -68,7 +68,7 @@ body {
 }
 
 .dark-body {
-  background-color: #303841;
+  background: linear-gradient(to bottom, #0000005d, #0000005d, #0000005d), url("../images/rash\ banner.png");
   position: relative;
   background-size: cover;
   background-position: center;
@@ -411,6 +411,20 @@ footer {
   .nav a:hover {
     background-color: unset;
     border-bottom: none;
+  }
+
+  .dark-body {
+    background: linear-gradient(to bottom, #0000005d, #0000005d, #0000005d), url("../images/rash\ banner.png");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact .contact-image {
