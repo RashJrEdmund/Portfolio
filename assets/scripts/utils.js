@@ -1,8 +1,16 @@
 /**
+ * Doing this because of the way github behaves with absolute paths.
+ * I need to include the repo name if it's deployed online. "Portfolio" is the repository's name
+*/
+const getRootPath = () => {
+  return window.location.hostname.toLowerCase().includes('github') ? '/Portfolio/' : '/'
+}
+
+/**
  * @argument filename which is a json file in the scripts section
 */
 const getJsonData = async (filename) => {
-  return fetch(`../json/${filename}`).then(res => res.json())
+  return fetch(`${getRootPath()}assets/json/${filename}`).then(res => res.json())
 }
 
 // TEMPLATES
@@ -15,7 +23,7 @@ const getProjectTemplate = (project) => {
   return (`
     <div class="container">
       <a class="a-tag" href="${project.url}" target="_blank">
-          <img src="../images/${project['image-name']}" alt="image of a ${project.title.toLowerCase().split(' ').join('-')} project">
+          <img src="${getRootPath()}assets/images/${project['image-name']}" alt="image of a ${project.title.toLowerCase().split(' ').join('-')} project">
           <div class="container-caption"><span>&#60;</span> ${project.title} <span>/&#62;</span></div>
       </a>
     </div>
