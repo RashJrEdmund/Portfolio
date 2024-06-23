@@ -1,0 +1,32 @@
+[
+  {
+    "href": "https://github.com/RashJrEdmund",
+    "fa-icon-class": "fa-brands fa-github",
+    "text": "GitHub"
+  },
+  {
+    "href": "https://www.linkedin.com/in/orashus",
+    "fa-icon-class": "fa-brands fa-linkedin-in",
+    "text": "LinkedIn"
+  },
+  {
+    "href": "https://www.facebook.com/Orashus",
+    "fa-icon-class": "fa-brands fa-facebook",
+    "text": "Facebook"
+  },
+  {
+    "href": "https://twitter.com/orashus",
+    "fa-icon-class": "fa-brands fa-twitter",
+    "text": "Twitter (X)"
+  },
+  {
+    "href": "mailto:orashusedmund@gmail.com?subject=Junior Developer Job Offer",
+    "fa-icon-class": "fa-solid fa-at",
+    "text": "Send a mail"
+  },
+  {
+    "href": "https://wa.me/+237670118208",
+    "fa-icon-class": "fa-brands fa-whatsapp",
+    "text": "WhatsApp"
+  }
+]

@@ -19,11 +19,11 @@ body {
   width: 100vw;
   position: fixed;
   top: 0;
-  z-index: 3;
+  z-index: 5;
 }
 
 .rash {
-  background: url("../images/my\ BG.png");
+  background: url("../images/my\ BG.jpg");
   background-position: center;
   background-size: cover;
   height: 4.25rem;
@@ -33,6 +33,11 @@ body {
   align-items: flex-end;
   margin-left: 2rem;
   border-radius: 100%;
+
+  @media only screen and (max-width: 650px) {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 .nav-text-box {
@@ -58,7 +63,6 @@ body {
   height: 4.25rem;
   width: fit-content;
   padding: 0 20px;
-  cursor: pointer;
   color: #fff;
 }
 
@@ -68,24 +72,26 @@ body {
 }
 
 .dark-body {
-  background: linear-gradient(to bottom, #0000005d, #0000005d, #0000005d), url("../images/rash\ banner.png");
-  position: relative;
+  background: linear-gradient(to bottom, #0000005d, #0000005d, #0000005d), url("../images/rash banner.png");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 650px) {
+    background: #303841;
+  }
 }
 
 .dark-body-text1 {
   text-align: center;
   color: #fff;
   font-size: 4rem;
-  font-family: 'Changa', sans-serif;
   font-weight: 800;
   filter: drop-shadow(0 10px 5px #222);
 }
@@ -108,7 +114,7 @@ body {
   justify-content: center;
 }
 
-.project-containers {
+#project-containers {
   width: 98%;
   padding: 0;
   display: grid;
@@ -124,7 +130,6 @@ body {
   color: #fff;
   font-size: 2.5rem;
   font-weight: bold;
-  font-family: 'Changa', sans-serif;
   margin: 6rem auto 2rem;
   width: fit-content;
   filter: drop-shadow(0 5px 10px #000);
@@ -163,7 +168,6 @@ img {
   border: none;
   color: #fff;
   font-size: 150%;
-  font-family: 'Changa', sans-serif;
   padding: 1rem 0;
   margin-top: 0;
   justify-items: center;
@@ -180,7 +184,7 @@ img {
 
 .container:hover span {
   opacity: 1;
-  color: #4682b4;
+  color: #be3144;
 }
 
 .projects .varying {
@@ -221,7 +225,6 @@ img {
   position: relative;
   z-index: 1;
   box-shadow: 0 5px 10px 0 #000;
-  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -297,7 +300,7 @@ img {
   font-weight: bold;
   margin-bottom: 1rem;
   filter: drop-shadow(0 10px 5px #222);
-  z-index: 2;
+  z-index: 3;
 }
 
 .contact-header2 {
@@ -306,11 +309,48 @@ img {
   font-size: 20px;
   margin: 0 auto 1rem;
   filter: drop-shadow(0 10px 5px #222);
-  z-index: 2;
+  z-index: 3;
+}
+
+#media-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+  justify-content: space-around;
+  z-index: 3;
+}
+
+#media-links div {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+/* #media-links div:hover {
+  margin-top: 15px;
+  height: 100%;
+} */
+
+.media {
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+  filter: drop-shadow(0 10px 5px #222);
+  transition: 0.5s;
+}
+
+#media-links div:hover .media {
+  transform: translateY(-10px);
+  filter: drop-shadow(0 10px 5px #45567d);
 }
 
 .contact .contact-image {
-  background: linear-gradient(to bottom, #0000007c, #0000007c, #0000007c), url('../images/my BG.png');
+  background: linear-gradient(to bottom, #0000007c, #0000007c, #0000007c), url("../images/my\ BG.jpg");
   background-repeat: no-repeat;
   background-position: top right;
   background-attachment: fixed;
@@ -325,38 +365,10 @@ img {
   border-radius: 0 50px 50px;
   box-shadow: 0 0 10px #000;
   z-index: 1;
-}
 
-.media-links {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  width: fit-content;
-  height: fit-content;
-  justify-content: space-around;
-  z-index: 2;
-}
-
-.media-links div {
-  position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 10px;
-  width: fit-content;
-  height: fit-content;
-}
-
-.media {
-  font-size: 25px;
-  text-decoration: none;
-  color: #fff;
-  filter: drop-shadow(0 10px 5px #222);
-  transition: 0.5s;
-}
-
-.media-links div:hover .media {
-  transform: translateY(-10px);
-  filter: drop-shadow(0 10px 5px #45567d);
+  @media only screen and (max-width: 790px) {
+    left: -50%;
+  }
 }
 
 .line2 {
@@ -380,13 +392,10 @@ footer {
 
 .footer-text1 {
   text-align: center;
-  font-size: 1.2rem;
-  font-family: 'Changa', sans-serif;
 }
 
 .footer-text2 {
   text-align: center;
-  font-family: 'Changa', sans-serif;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -394,7 +403,7 @@ footer {
     margin-left: 10px;
   }
 
-  .project-containers {
+  #project-containers {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -412,13 +421,6 @@ footer {
     background-color: unset;
     border-bottom: none;
   }
-
-  .contact .contact-image {
-    top: 10%;
-    left: 10%;
-    transform: translate(-50%, 0);
-    border-radius: 0 50px;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -431,19 +433,12 @@ footer {
     padding-bottom: 3rem;
   }
 
-  .contact .contact-image {
-    left: 20%;
-    transform: translate(-50%, 0);
-    max-height: 450px;
-    border-radius: 100px 20px;
-  }
-
-  .media-links {
+  #media-links {
     width: 90%;
     margin: 2.8rem auto 0;
   }
 
-  .project-containers {
+  #project-containers {
     grid-template-columns: 1fr;
   }
 
